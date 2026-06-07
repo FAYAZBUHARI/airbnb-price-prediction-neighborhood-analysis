@@ -32,7 +32,12 @@ The dataset includes listing information such as borough, neighborhood, room typ
 ```text
 data/
   raw/
+    AB_NYC_2019.csv
+
   processed/
+    airbnb_cleaned.csv
+    tableau_airbnb_dashboard_data.csv
+    tableau_neighborhood_summary.csv
 
 notebooks/
   01_data_cleaning.ipynb
@@ -46,6 +51,10 @@ dashboard/
 images/
   dashboard_screenshot.png
   price_by_neighborhood.png
+  price_distribution.png
+  avg_price_by_borough.png
+  avg_price_by_roomtype.png
+  actual_vs_predicted.png
 
 README.md
 ```
@@ -77,6 +86,22 @@ Final cleaned dataset:
 
 In `02_exploratory_data_analysis.ipynb`, the project explored pricing patterns across NYC.
 
+### Price Distribution
+
+![Price Distribution](images/price_distribution.png)
+
+### Average Price by Borough
+
+![Average Price by Borough](images/avg_price_by_borough.png)
+
+### Average Price by Room Type
+
+![Average Price by Room Type](images/avg_price_by_roomtype.png)
+
+### Top 10 Expensive Neighborhoods
+
+![Top 10 Expensive Neighborhoods](images/price_by_neighborhood.png)
+
 Key findings:
 
 * Entire homes are the most expensive room type.
@@ -84,7 +109,7 @@ Key findings:
 * Brooklyn has a high number of listings and more affordable average prices than Manhattan.
 * Price distribution is right-skewed, meaning most listings are affordable or mid-range, while a smaller number of luxury listings raise the average price.
 
-## Dashboard
+## Dashboard Preview
 
 The Tableau dashboard includes:
 
@@ -93,7 +118,7 @@ The Tableau dashboard includes:
 * Average price by borough
 * NYC Airbnb listing map
 
-![Dashboard](images/dashboard_screenshot.png)
+![Dashboard Screenshot](images/dashboard_screenshot.png)
 
 ## Machine Learning
 
@@ -116,6 +141,10 @@ Random Forest
 MAE: $47.08
 R² Score: 0.46
 ```
+
+### Actual vs Predicted Prices
+
+![Actual vs Predicted](images/actual_vs_predicted.png)
 
 The model was also used to identify potentially underpriced listings by comparing actual prices with predicted prices.
 
@@ -163,19 +192,15 @@ data/raw/
 dashboard/airbnb_dashboard.twb
 ```
 
-## Resume Bullets
-
-* Built an end-to-end machine learning project to predict Airbnb listing prices using 48,392 NYC listings.
-* Cleaned and feature-engineered Airbnb data using Python, Pandas, and NumPy.
-* Trained Linear Regression and Random Forest models, with Random Forest achieving an R² score of 0.46 and MAE of $47.08.
-* Created a Tableau dashboard to visualize Airbnb pricing trends by borough, room type, and location.
-* Identified potentially underpriced listings by comparing actual prices with model-predicted prices.
-
 ## Author
 
-**Your Name**
-GitHub: `yourusername`
-LinkedIn: `yourprofile`
+**Syeda Saniya Muskan**
+GitHub: `https://github.com/syedas2650`
+LinkedIn: `https://www.linkedin.com/in/saniya-muskan-syeda-032b44309/`
+
+**Mohamed Fayaz Buhari**
+GitHub: `https://github.com/FAYAZBUHARI`
+LinkedIn: `https://www.linkedin.com/in/mohamedfayazbuhari/`
 
 ## License
 
